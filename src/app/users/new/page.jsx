@@ -34,6 +34,7 @@ const NewUserPage = () => {
 
         const res = await req.json();
         // console.log('created user', createdUser);
+
         if(res.success){
             alert('User created successfully');
             redirect('/users');
